@@ -1,0 +1,298 @@
+<mxfile host="Electron" agent="draw.io">
+  <diagram name="Todo App Architecture" id="arch-1">
+    <mxGraphModel dx="1680" dy="1012" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="2000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t_bg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=none;arcSize=8;" value="" vertex="1">
+          <mxGeometry height="60" width="2320" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t_title" parent="1" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontSize=14;" value="&lt;span style=&quot;font-size:22px;color:#ffffff;&quot;&gt;&lt;b&gt;📋 Todo 任务管理 — 系统架构图&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="500" x="60" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t_sub" parent="1" style="text;html=1;align=right;fillColor=none;strokeColor=none;" value="&lt;span style=&quot;font-size:12px;color:#8899aa;&quot;&gt;Kotlin Multiplatform &amp;nbsp;·&amp;nbsp; Compose Multiplatform &amp;nbsp;·&amp;nbsp; Ktor &amp;nbsp;·&amp;nbsp; Koin DI &amp;nbsp;·&amp;nbsp; H2 Database&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="1040" x="1300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_bg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F5F5,#F5F5F5);strokeColor=light-dark(#FFFFFF,#FFFFFF);strokeWidth=2;arcSize=16;opacity=40;" value="" vertex="1">
+          <mxGeometry height="400" width="2340" x="20" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_label" parent="1" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontSize=14;fontColor=#0D47A1;" value="&lt;span style=&quot;font-size:14px;color:#0D47A1;&quot;&gt;&lt;b&gt;📱 客户端 — 跨平台表现层 (Client - Cross-platform Presentation)&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="24" width="600" x="60" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="p_android" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#42a5f5;strokeWidth=2;arcSize=14;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;b&gt;🤖 Android&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;MainActivity.kt&lt;br&gt;setContent { App() }&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="170" x="60" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="p_ios" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#42a5f5;strokeWidth=2;arcSize=14;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;b&gt;🍎 iOS&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;iOSApp → ContentView&lt;br&gt;ComposeView (SwiftUI 桥接)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="170" x="300" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="p_desktop" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#42a5f5;strokeWidth=2;arcSize=14;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;b&gt;🖥️ Desktop&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;main.kt&lt;br&gt;startKoin → Window(480×800)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="170" x="540" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ui_app" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#7986cb;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;App.kt&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;Scaffold + NavigationBar&lt;br&gt;5 选项卡切换&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="820" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ui_views" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#7986cb;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;视图页面&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;📋 DayView &amp;nbsp;📅 WeekView&lt;br&gt;🗓️ MonthView &amp;nbsp;🏷️ TagsView&lt;br&gt;👤 ProfilePage&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="1260" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ui_dialogs" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1d5ee;strokeColor=#9fa8da;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;对话框组件&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;AddTaskDialog&lt;br&gt;EditTaskDialog · ExportDialog&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="1500" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ui_search" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d1d5ee;strokeColor=#9fa8da;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;🔍 搜索功能&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;按标题/描述/标签&lt;br&gt;实时过滤任务&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="1720" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ui_di" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#9e9e9e;strokeWidth=1.5;dashed=1;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:12px;color:#1A1A2E;&quot;&gt;&lt;b&gt;appModule (Koin DI)&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;single&amp;lt;ITaskRepo&amp;gt; → RemoteTaskRepositoryImpl&lt;br&gt;single&amp;lt;ITagRepo&amp;gt; → RemoteTagRepositoryImpl&lt;br&gt;single&amp;lt;IAuthRepo&amp;gt; → RemoteAuthRepositoryImpl&lt;/span&gt;" vertex="1">
+          <mxGeometry height="75" width="420" x="820" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="vm_auth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#66bb6a;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;AuthViewModel&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;isLoggedIn · currentUser · token&lt;br&gt;login() · logout() · getToken()&lt;/span&gt;" vertex="1">
+          <mxGeometry height="75" width="290" x="1280" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="vm_task" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#66bb6a;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;TaskViewModel&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;selectedDate · tasks · tags&lt;br&gt;CRUD · toggle · export · search&lt;/span&gt;" vertex="1">
+          <mxGeometry height="75" width="310" x="1610" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="l2_bg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEDEDE;strokeColor=light-dark(#FFFFFF,#FFFFFF);strokeWidth=2;arcSize=16;opacity=40;" value="" vertex="1">
+          <mxGeometry height="380" width="2340" x="20" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="l2_label" parent="1" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontSize=14;fontColor=#1B5E20;" value="&lt;span style=&quot;font-size:14px;color:#1B5E20;&quot;&gt;&lt;b&gt;🔗 网络仓储与核心领域层 (Repository &amp;amp; Core Domain)&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="24" width="600" x="60" y="548" as="geometry" />
+        </mxCell>
+        <mxCell id="repo_task_impl" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcedc8;strokeColor=#8bc34a;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;RemoteTaskRepositoryImpl&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;GET /api/tasks &amp;nbsp;POST /api/task&lt;br&gt;PUT /api/task/{id} &amp;nbsp;DELETE /api/task/{id}&lt;br&gt;PUT /api/task/{id}/toggle&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="370" x="60" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="repo_tag_impl" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcedc8;strokeColor=#8bc34a;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;RemoteTagRepositoryImpl&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;GET /api/tags &amp;nbsp;POST /api/tag&lt;br&gt;PUT /api/tag/{id} &amp;nbsp;DELETE /api/tag/{id}&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="330" x="480" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="repo_auth_impl" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcedc8;strokeColor=#8bc34a;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;RemoteAuthRepositoryImpl&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;POST /api/auth/login&lt;br&gt;GET /api/auth/me &amp;nbsp;POST /api/auth/logout&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="330" x="860" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="core_itask" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;strokeWidth=1.5;dashed=1;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;«interface» ITaskRepository&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;getAllTasks() · getByDate() · getByDateRange()&lt;br&gt;createTask() · updateTask() · deleteTask() · toggleStatus()&lt;/span&gt;" vertex="1">
+          <mxGeometry height="54" width="480" x="60" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="core_itag" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;strokeWidth=1.5;dashed=1;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;«interface» ITagRepository&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;getAllTags() · createTag() · updateTag() · deleteTag() · getTagById()&lt;/span&gt;" vertex="1">
+          <mxGeometry height="54" width="420" x="580" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="core_iauth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;strokeWidth=1.5;dashed=1;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;«interface» IAuthRepository&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;login() · oauthLogin() · getMe() · logout() · updateProfile()&lt;/span&gt;" vertex="1">
+          <mxGeometry height="54" width="400" x="1040" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="l_models" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f8e9;strokeColor=#a5d6a7;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;领域模型 (@Serializable)&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;Task · Tag · User · Priority · TaskStatus&lt;/span&gt;" vertex="1">
+          <mxGeometry height="52" width="260" x="60" y="785" as="geometry" />
+        </mxCell>
+        <mxCell id="l_utils" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f8e9;strokeColor=#a5d6a7;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;工具类&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;DateUtils · LunarCalendar&lt;/span&gt;" vertex="1">
+          <mxGeometry height="52" width="220" x="360" y="785" as="geometry" />
+        </mxCell>
+        <mxCell id="l_apimodels" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f8e9;strokeColor=#a5d6a7;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;API 数据传输模型&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;ApiModels · AuthModels&lt;br&gt;(kotlinx.serialization)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="52" width="240" x="620" y="785" as="geometry" />
+        </mxCell>
+        <mxCell id="infra_http" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#9e9e9e;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;Ktor HttpClient&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;ContentNegotiation (JSON)&lt;br&gt;Bearer Token 认证&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="240" x="1480" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="infra_local" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#bdbdbd;strokeWidth=1.5;dashed=1;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;本地开发模式&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;LocalTaskRepositoryImpl&lt;br&gt;(离线/演示用途)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="54" width="240" x="1480" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="l3_bg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCFCFC;strokeColor=light-dark(#FFFFFF,#FFFFFF);strokeWidth=2;arcSize=16;opacity=40;" value="" vertex="1">
+          <mxGeometry height="520" width="2340" x="20" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="l3_label" parent="1" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontSize=14;fontColor=#BF360C;" value="&lt;span style=&quot;font-size:14px;color:#BF360C;&quot;&gt;&lt;b&gt;🖧 服务端 (Server — Ktor + Netty + H2)&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="24" width="600" x="60" y="994" as="geometry" />
+        </mxCell>
+        <mxCell id="srv_app" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffecb3;strokeColor=#ffa726;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;Application.kt&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;Netty embeddedServer(:8080)&lt;br&gt;install(Koin) · install(CORS)&lt;br&gt;install(ContentNegotiation)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="82" width="260" x="60" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="srv_routes" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffecb3;strokeColor=#ffa726;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;路由层 (Route Handlers)&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;🔐 AuthRoutes · POST /api/auth/*&lt;br&gt;📋 TaskRoutes · GET/POST/PUT/DELETE /api/task(s)/*&lt;br&gt;🏷️ TagRoutes · GET/POST/PUT/DELETE /api/tag(s)/*&lt;br&gt;📤 ExportRoutes · GET /api/export/markdown&lt;/span&gt;" vertex="1">
+          <mxGeometry height="82" width="320" x="370" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="srv_di" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#efebe9;strokeColor=#a1887f;strokeWidth=1.5;dashed=1;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;color:#1A1A2E;&quot;&gt;&lt;b&gt;serverModule (Koin DI)&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;single { DataSource }&lt;br&gt;single&amp;lt;ITaskRepo&amp;gt; → TaskRepositoryImpl&lt;br&gt;single&amp;lt;ITagRepo&amp;gt; → TagRepositoryImpl&lt;/span&gt;" vertex="1">
+          <mxGeometry height="82" width="310" x="740" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="srv_dblayer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9c4;strokeColor=#fdd835;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;数据库访问层 (JDBC)&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;TaskRepositoryImpl · TagRepositoryImpl · UserRepository&lt;br&gt;JDBC 操作 · 参数化查询 · 事务管理&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="500" x="60" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="srv_h2" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#ede7f6;strokeColor=#7e57c2;strokeWidth=2;size=16;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;b&gt;🗄️ H2 Database&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;文件模式 &amp;nbsp;jdbc:h2:file:~/.todo_app/todo_db&lt;br&gt;MODE=MySQL &amp;nbsp;DB_CLOSE_DELAY=-1&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="260" x="60" y="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="srv_tables" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#ab47bc;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;📊 数据表结构&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;&lt;b&gt;tasks&lt;/b&gt;: id · title · description · status · priority · due_date · created_at · completed_at · tags · user_id&lt;br&gt;&lt;b&gt;tags&lt;/b&gt;: id · name · icon&lt;br&gt;&lt;b&gt;users&lt;/b&gt;: id · username · password_hash · nickname · avatar · token · provider · provider_id · created_at&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="580" x="370" y="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="srv_dbconfig" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#ce93d8;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:12px;color:#333333;&quot;&gt;&lt;b&gt;Database.kt&lt;/b&gt;: 自动建表 · 字段迁移兼容&lt;br&gt;采用 HikariCP 数据源管理连接池&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="240" x="1000" y="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="srv_http_lbl" parent="1" style="text;html=1;align=center;fillColor=none;strokeColor=none;fontSize=14;" value="&lt;span style=&quot;font-size:14px;color:#d32f2f;&quot;&gt;&lt;b&gt;───────── HTTP REST API (:8080) ─────────&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="28" width="460" x="1480" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="ctn_legend" parent="1" style="swimlane;startSize=36;fillColor=#ffffff;strokeColor=#b0bec5;strokeWidth=1;rounded=1;arcSize=10;fontStyle=0;html=1;" value="&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;b&gt;📖 图例说明&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="470" width="420" x="1480" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1_box" parent="ctn_legend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#42a5f5;arcSize=6;" value="" vertex="1">
+          <mxGeometry height="18" width="28" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1_text" parent="ctn_legend" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontSize=12;" value="&lt;span style=&quot;font-size:12px;&quot;&gt;蓝色 — 跨平台客户端 &amp;amp; 共享 UI 层&lt;/span&gt;" vertex="1">
+          <mxGeometry height="22" width="340" x="58" y="48" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2_box" parent="ctn_legend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#66bb6a;arcSize=6;" value="" vertex="1">
+          <mxGeometry height="18" width="28" x="20" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2_text" parent="ctn_legend" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontSize=12;" value="&lt;span style=&quot;font-size:12px;&quot;&gt;绿色 — ViewModel · Repository · Core 接口&lt;/span&gt;" vertex="1">
+          <mxGeometry height="22" width="340" x="58" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3_box" parent="ctn_legend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffecb3;strokeColor=#ffa726;arcSize=6;" value="" vertex="1">
+          <mxGeometry height="18" width="28" x="20" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3_text" parent="ctn_legend" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontSize=12;" value="&lt;span style=&quot;font-size:12px;&quot;&gt;橙色 — 服务端路由 &amp;amp; 业务处理层&lt;/span&gt;" vertex="1">
+          <mxGeometry height="22" width="340" x="58" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4_box" parent="ctn_legend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#9e9e9e;arcSize=6;" value="" vertex="1">
+          <mxGeometry height="18" width="28" x="20" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4_text" parent="ctn_legend" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontSize=12;" value="&lt;span style=&quot;font-size:12px;&quot;&gt;灰色 — 基础设施 · 工具 · DI 配置&lt;/span&gt;" vertex="1">
+          <mxGeometry height="22" width="340" x="58" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="leg5_box" parent="ctn_legend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede7f6;strokeColor=#7e57c2;arcSize=6;" value="" vertex="1">
+          <mxGeometry height="18" width="28" x="20" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="leg5_text" parent="ctn_legend" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontSize=12;" value="&lt;span style=&quot;font-size:12px;&quot;&gt;紫色 — H2 数据库 &amp;amp; 数据表结构&lt;/span&gt;" vertex="1">
+          <mxGeometry height="22" width="340" x="58" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="leg6_box" parent="ctn_legend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;strokeWidth=1.5;dashed=1;arcSize=6;" value="" vertex="1">
+          <mxGeometry height="18" width="28" x="20" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="leg6_text" parent="ctn_legend" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontSize=12;" value="&lt;span style=&quot;font-size:12px;&quot;&gt;虚线边框 — 接口定义 / DI 依赖注入绑定&lt;/span&gt;" vertex="1">
+          <mxGeometry height="22" width="340" x="58" y="213" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_arrow1" parent="ctn_legend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#43a047;strokeWidth=2;arcSize=6;" value="" vertex="1">
+          <mxGeometry height="6" width="28" x="20" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_arrow1_text" parent="ctn_legend" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontSize=12;" value="&lt;span style=&quot;font-size:12px;&quot;&gt;实线箭头 — 数据流 / 函数调用&lt;/span&gt;" vertex="1">
+          <mxGeometry height="22" width="340" x="58" y="248" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_arrow2" parent="ctn_legend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#689f38;strokeWidth=1.5;dashed=1;arcSize=6;" value="" vertex="1">
+          <mxGeometry height="6" width="28" x="20" y="284" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_arrow2_text" parent="ctn_legend" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontSize=12;" value="&lt;span style=&quot;font-size:12px;&quot;&gt;虚线箭头 — 接口实现 / 依赖注入关系&lt;/span&gt;" vertex="1">
+          <mxGeometry height="22" width="340" x="58" y="278" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_arrow3" parent="ctn_legend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d32f2f;strokeWidth=3;arcSize=6;" value="" vertex="1">
+          <mxGeometry height="6" width="28" x="20" y="316" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_arrow3_text" parent="ctn_legend" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontSize=12;" value="&lt;span style=&quot;font-size:12px;&quot;&gt;红色粗线 — HTTP REST API 网络通信&lt;/span&gt;" vertex="1">
+          <mxGeometry height="22" width="340" x="58" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_flow_header" parent="ctn_legend" style="text;html=1;align=left;fillColor=none;strokeColor=none;fontSize=13;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;数据流向&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="24" width="380" x="20" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_flow" parent="ctn_legend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#90caf9;arcSize=10;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="74" width="380" x="20" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_flow_text" parent="ctn_legend" style="text;html=1;align=center;fillColor=none;strokeColor=none;fontSize=12;" value="&lt;span style=&quot;font-size:12px;color:#1565c0;&quot;&gt;UI (App.kt) &lt;b&gt;→&lt;/b&gt; ViewModel &lt;b&gt;→&lt;/b&gt; Repository Impl&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#d32f2f;&quot;&gt;&lt;b&gt;→&lt;/b&gt; HTTP REST API (:8080) &lt;b&gt;→&lt;/b&gt; Ktor Server&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:12px;color:#e65100;&quot;&gt;&lt;b&gt;→&lt;/b&gt; Routes &lt;b&gt;→&lt;/b&gt; DB Layer &lt;b&gt;→&lt;/b&gt; H2 Database&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="360" x="30" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="e_android_app" edge="1" parent="1" source="p_android" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#1565c0;strokeWidth=2;endArrow=classic;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="ui_app" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ios_app" edge="1" parent="1" source="p_ios" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#1565c0;strokeWidth=2;endArrow=classic;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="ui_app" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_desktop_app" edge="1" parent="1" source="p_desktop" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#1565c0;strokeWidth=2;endArrow=classic;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="ui_app" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_app_login" edge="1" parent="1" source="ui_app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#5c6bc0;strokeWidth=1.5;endArrow=classic;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="ui_login" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_app_views" edge="1" parent="1" source="ui_app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#5c6bc0;strokeWidth=1.5;endArrow=classic;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="ui_views" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_app_dialogs" edge="1" parent="1" source="ui_app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#5c6bc0;strokeWidth=1.5;endArrow=classic;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="ui_dialogs" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_app_search" edge="1" parent="1" source="ui_login" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#5c6bc0;strokeWidth=1.5;endArrow=classic;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="ui_search" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_login_authvm" edge="1" parent="1" source="ui_login" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#43a047;strokeWidth=2;endArrow=classic;exitX=0.5;exitY=1;entryX=0.4;entryY=0;" target="vm_auth" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_views_taskvm" edge="1" parent="1" source="ui_views" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#43a047;strokeWidth=2;endArrow=classic;exitX=0.5;exitY=1;entryX=0.3;entryY=0;" target="vm_task" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_authvm_rauth" edge="1" parent="1" source="vm_auth" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#43a047;strokeWidth=2;endArrow=classic;exitX=0.2;exitY=1;entryX=0.5;entryY=0;" target="repo_auth_impl" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_taskvm_rtask" edge="1" parent="1" source="vm_task" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#43a047;strokeWidth=2;endArrow=classic;exitX=0.1;exitY=1;entryX=0.5;entryY=0;" target="repo_task_impl" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_taskvm_rtag" edge="1" parent="1" source="vm_task" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#43a047;strokeWidth=2;endArrow=classic;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="repo_tag_impl" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_repo_impl_core_task" edge="1" parent="1" source="repo_task_impl" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#689f38;strokeWidth=1.5;endArrow=classic;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="core_itask" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_repo_impl_core_task_lbl" connectable="0" parent="e_repo_impl_core_task" style="edgeLabel;html=1;fontSize=11;align=center;" value="&lt;span style=&quot;font-size:11px;color:#689f38;&quot;&gt;implements&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.5" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_repo_impl_core_tag" edge="1" parent="1" source="repo_tag_impl" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#689f38;strokeWidth=1.5;endArrow=classic;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="core_itag" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_repo_impl_core_tag_lbl" connectable="0" parent="e_repo_impl_core_tag" style="edgeLabel;html=1;fontSize=11;align=center;" value="&lt;span style=&quot;font-size:11px;color:#689f38;&quot;&gt;implements&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.5" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_repo_impl_core_auth" edge="1" parent="1" source="repo_auth_impl" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#689f38;strokeWidth=1.5;endArrow=classic;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="core_iauth" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_repo_impl_core_auth_lbl" connectable="0" parent="e_repo_impl_core_auth" style="edgeLabel;html=1;fontSize=11;align=center;" value="&lt;span style=&quot;font-size:11px;color:#689f38;&quot;&gt;implements&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.5" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_repo_impl_http" edge="1" parent="1" source="repo_task_impl" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#757575;strokeWidth=1.5;endArrow=classic;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="infra_http" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_http_server" edge="1" parent="1" source="infra_http" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#d32f2f;strokeWidth=2.5;endArrow=classic;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="srv_app" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1600" y="860" />
+              <mxPoint x="190" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_http_server_lbl" connectable="0" parent="e_http_server" style="edgeLabel;html=1;fontSize=12;" value="&lt;span style=&quot;font-size:12px;color:#d32f2f;&quot;&gt;&lt;b&gt;HTTP REST :8080&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.05" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_di_repo" edge="1" parent="1" source="ui_di" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#bdbdbd;strokeWidth=1.5;endArrow=classic;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="repo_task_impl" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_srv_app_routes" edge="1" parent="1" source="srv_app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#ff8f00;strokeWidth=2;endArrow=classic;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="srv_routes" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_srv_routes_dblayer" edge="1" parent="1" source="srv_routes" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#ff8f00;strokeWidth=2;endArrow=classic;exitX=0.3;exitY=1;entryX=0.5;entryY=0;" target="srv_dblayer" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_srv_dblayer_h2" edge="1" parent="1" source="srv_dblayer" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#ff8f00;strokeWidth=2;endArrow=classic;exitX=0.3;exitY=1;entryX=0.5;entryY=0;" target="srv_h2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_srv_dblayer_h2_lbl" connectable="0" parent="e_srv_dblayer_h2" style="edgeLabel;html=1;fontSize=11;" value="&lt;span style=&quot;font-size:11px;color:#e65100;&quot;&gt;JDBC&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.5" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_srv_di_bindings" edge="1" parent="1" source="srv_di" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#a1887f;strokeWidth=1.5;endArrow=classic;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="srv_dblayer" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="text;html=1;align=center;fillColor=none;strokeColor=none;" value="&lt;span style=&quot;font-size:11px;color:#999999;&quot;&gt;📋 Todo 任务管理系统 — 架构图 &amp;nbsp;·&amp;nbsp; Kotlin Multiplatform + Compose Multiplatform + Ktor + H2 &amp;nbsp;·&amp;nbsp; 使用 draw.io 编辑修改&lt;/span&gt;" vertex="1">
+          <mxGeometry height="24" width="2320" x="40" y="1520" as="geometry" />
+        </mxCell>
+        <mxCell id="Ts95DKweKkBIUm5r6SeM-1" edge="1" parent="1" source="ui_app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#5c6bc0;strokeWidth=1.5;endArrow=classic;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="ui_login" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="278" as="sourcePoint" />
+            <mxPoint x="1720" y="303" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ui_login" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c5cae9;strokeColor=#7986cb;arcSize=12;verticalAlign=middle;fontColor=#1A1A2E;" value="&lt;span style=&quot;font-size:13px;&quot;&gt;&lt;b&gt;LoginPage&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;color:#333333;&quot;&gt;用户名 + 密码登录&lt;br&gt;登录即自动注册&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="180" x="1040" y="240" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

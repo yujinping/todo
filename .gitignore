@@ -28,3 +28,4 @@ captures
 node_modules/
 gradle/wrapper/dists/**/*
 wrapper/dists/**/*
+**/.skiko/**
