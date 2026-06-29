@@ -26,3 +26,5 @@ captures
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
 node_modules/
+gradle/wrapper/dists/**/*
+wrapper/dists/**/*
