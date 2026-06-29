@@ -18,8 +18,8 @@ fi
 JAVA_VERSION=$("$JAVA_BIN" -version 2>&1 | head -1 | grep -oP '\d+' | head -1)
 if [ "$JAVA_VERSION" -lt 21 ] 2>/dev/null; then
     # 尝试查找系统上的 JDK 21
-    if [ -d "/Users/edy/Library/Java/JavaVirtualMachines/corretto-21.0.11/Contents/Home" ]; then
-        JAVA_BIN="/Users/edy/Library/Java/JavaVirtualMachines/corretto-21.0.11/Contents/Home/bin/java"
+    if [ -d "~/Library/Java/JavaVirtualMachines/corretto-21.0.11/Contents/Home" ]; then
+        JAVA_BIN="~/Library/Java/JavaVirtualMachines/corretto-21.0.11/Contents/Home/bin/java"
     elif [ -d "$JAVA_HOME_21" ]; then
         JAVA_BIN="$JAVA_HOME_21/bin/java"
     fi
